@@ -1,0 +1,21 @@
+- vue add vuetify (Choose Recommended)
+- npm install vue-router@3 --save
+- npm install axios --save
+- npm install vue-sweetalert2
+- npm install vuex@3 --save
+- npm install moment --save
+- npm i vue-chartjs chart.js
+- npm i vue-dayjs
+- npm install vue2-highcharts --save
+- npm i -S vue-input-mask
+- npm install --save vue-the-mask
+- npm install --save vuetify-datetime-picker
+- npm install vue-qrcode-component
+- npm install vue-google-oauth2 --save
+- npm install jwt-decode
+- npm install --save vue-google-signin-button-directive
+- npm i vue-signature-pad@2.0.5
+- composer create-project --prefer-dist laravel/laravel blog
+- composer require barryvdh/laravel-dompdf
+- npm i @balkangraph/orgchart.js
+- npm install --save tiptap-vuetify
