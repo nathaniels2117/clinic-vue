@@ -457,7 +457,7 @@
             { text: 'First Name', value: 'personal_information.firstname',width: '130px'},
             { text: 'Middle Name', value: 'personal_information.middlename',width: '130px'},
             { text: 'Last Name', value: 'personal_information.lastname',width: '130px'},
-            { text: 'Suffix', value: 'personal_information.sufix',sortable: false},
+            { text: 'Suffix', value: 'personal_information.suffix',sortable: false},
             { text: 'SSS', value: 'user_other_personal_information.sss',width: '120px',sortable: false},
             { text: 'Philhealth', value: 'user_other_personal_information.philhealth',width: '140px',sortable: false},
             { text: 'Pagibig', value: 'user_other_personal_information.pagibig',width: '140px',sortable: false},

@@ -24,7 +24,7 @@
                             append-icon="mdi-magnify"
                             placeholder="Search"
                             hide-details
-                            color="orange"
+                            color="purple"
                             overflow
                             solo
                             dense
@@ -44,7 +44,7 @@
                         >
                           <template v-slot:activator="{ on, attrs }">
                             <v-btn
-                              color="orange"
+                              color="purple"
                               dark
                               v-bind="attrs"
                               v-on="on"
@@ -79,7 +79,7 @@
                         >
                           <template v-slot:activator="{ on, attrs }">
                             <v-btn
-                              color="orange"
+                              color="purple"
                               dark
                               v-bind="attrs"
                               v-on="on"
@@ -111,7 +111,7 @@
                       <v-btn
                       medium
                       dark
-                        color="orange"
+                        color="purple"
                         elevation="2"
                         @click="NewRoleInformation()"
                                           v-if="$store.getters.valAccess(10)"
@@ -124,7 +124,7 @@
                       <v-btn
                       medium
                       dark
-                        color="orange"
+                        color="purple"
                         elevation="2"
                         style="padding-left: 12px;padding-right: 12px;"
                         @click="NewRoleInformation()"
@@ -159,7 +159,7 @@
                       <v-chip
                           class="ma-2"
                           outlined
-                          color="orange"
+                          color="purple"
                           v-if="props.item.flag == 1"
                       >
                           Active
@@ -176,7 +176,7 @@
                       v-if="$store.getters.valAccess(11)"
                       >
                           <v-switch
-                              color="orange"
+                              color="purple"
                               v-model="props.item.flag"
                               @change="UpdateRoleInformation(props.item.id, 'flag', props.item.flag)"
                           ></v-switch>
@@ -195,7 +195,7 @@
                         dark
                         small
                         outlined
-                        color="orange"
+                        color="purple"
                         @click="EditAccessInformation(props.item.id, 'name', props.item.name)"
                         v-if="$store.getters.valAccess(11)"
                       >
@@ -231,7 +231,7 @@
                 </v-data-table>
                 <!-- Role data table -->
                 <v-pagination
-                  color="orange"
+                  color="purple"
                   v-model="page"
                   :length="pageCount"
                 ></v-pagination>
@@ -271,7 +271,7 @@
                 dark
                 outlined
                 small
-                color="orange"
+                color="purple"
                 @click="confirmDelete()"
                 >
                 Confirm
@@ -316,7 +316,7 @@
                 dark
                 outlined
                 small
-                color="orange"
+                color="purple"
                 @click="confirmSave()"
                 >
                 Confirm
@@ -361,7 +361,7 @@
                 dark
                 outlined
                 small
-                color="orange"
+                color="purple"
                 @click="confirmUpdate()"
                 >
                 Confirm
@@ -405,7 +405,7 @@
                 dark
                 outlined
                 small
-                color="orange"
+                color="purple"
                 @click="confirmUpdateAccess()"
                 >
                 Confirm
@@ -433,7 +433,7 @@
         <v-card>
           <v-toolbar
             dark
-            color="orange"
+            color="purple"
           >
           <v-btn
             icon
@@ -453,7 +453,7 @@
           </v-col>
           <v-col sm="12" md="6" offset-md="3"> 
               <v-text-field
-              color="orange"
+              color="purple"
                   label="Role"
                   required
                   outlined
@@ -466,14 +466,14 @@
               <v-treeview
                   selectable
                   v-model="role_informations.access"
-                  selected-color="orange"
+                  selected-color="purple"
                   :items="access"
                   class="mt-3"
               ></v-treeview>
               <center>
                 <v-col sm="12" md="12">
                     <v-btn
-                    color="orange"
+                    color="purple"
                     block
                     outlined
                     @click="validate()"
@@ -505,7 +505,7 @@
         <v-card>
           <v-toolbar
             dark
-            color="orange"
+            color="purple"
           >
             <v-btn
               icon
@@ -529,7 +529,7 @@
                   required
                   outlined
                   v-model="access_information.name"
-                  color="orange"
+                  color="purple"
                   :rules="[v => !!v || 'Role Name is required']"
               ></v-text-field>
               <h4 class="mb-3">Access Rights</h4>
@@ -537,14 +537,14 @@
               <v-treeview
                   selectable
                   v-model="access_information.access"
-                  selected-color="orange"
+                  selected-color="purple"
                   :items="access"
                   class="mt-3"
               ></v-treeview>
               <center>
                 <v-col sm="12" md="12">
                     <v-btn
-                    color="orange"
+                    color="purple"
                     block
                     outlined
                     :disabled="!valid"
@@ -623,14 +623,10 @@
     },
     created(){
       this.hrisdata = localStorage.getItem('is_hris')
-    if(this.hrisdata == 1){
+   
         this.$store.state.header = false;
         this.$store.state.footer = false;
-    }else{
-        this.$store.state.header = true;
-        this.$store.state.footer = true;
-    }
-        this.$store.state.snackbar.color = 'orange';
+        this.$store.state.snackbar.color = 'purple';
         this.FetchRoleInformations();
         this.FetchAccessInformation();
         this.headers = Object.values(this.headersMap);
@@ -928,6 +924,6 @@
 
 <style scoped>
   input[type=checkbox] {
-  accent-color: orange;
+  accent-color: purple;
 }
 </style>

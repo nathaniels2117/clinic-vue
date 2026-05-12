@@ -104,7 +104,6 @@
                       color="orange"
                       elevation="2"
                       @click="NewAnnouncement()" 
-                      v-if="$store.getters.valAccess(93)"
                     >
                       <v-icon>mdi-plus</v-icon>Create
                     </v-btn>
@@ -118,7 +117,6 @@
                       elevation="2"
                       style="padding-left: 12px;padding-right: 12px;"
                       @click="NewAnnouncement()" 
-                      v-if="$store.getters.valAccess(93)"
                     >
                       <v-icon>mdi-plus</v-icon>
                     </v-btn>
@@ -185,7 +183,6 @@
                             outlined
                             small
                             color="orange"
-                            v-if="$store.getters.valAccess(90)"
                             @click="UpdateAllAnnouncement(props.item.id, props.item)"
                         >
                         <v-icon
@@ -207,7 +204,6 @@
                             outlined
                             small
                             color="red"
-                            v-if="$store.getters.valAccess(91)"
                             @click="DeleteAnnouncement(props.item.id, props.item.name)"
                         >
                         <v-icon

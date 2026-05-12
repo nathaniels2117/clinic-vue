@@ -224,8 +224,9 @@ import jwt_decode from "jwt-decode";
                       // this.$router.push('/hrisdashboard');
                     // }
                     localStorage.setItem("is_hris", 1);
-                    localStorage.setItem("sub_type", response.data.subscription_type);
-                      this.$router.push('/hrisdashboard');
+                    localStorage.setItem("sub_type", 1);
+                    // old localStorage.setItem("sub_type", response.data.subscription_type);
+                    this.$router.push('/hrisdashboard');
 
                     //For Snackbar
                     this.$store.state.snackbar.message = response.data.message;
@@ -270,7 +271,8 @@ import jwt_decode from "jwt-decode";
                     //   this.$router.push('/hrisdashboard');
                     // }
                     localStorage.setItem("is_hris", 1);
-                    localStorage.setItem("sub_type", response.data.subscription_type);
+                    // old localStorage.setItem("sub_type", response.data.subscription_type);
+                    localStorage.setItem("sub_type", 1);
                       this.$router.push('/hrisdashboard');
 
 

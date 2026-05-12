@@ -52,7 +52,7 @@
                                                 :outlined="foreditstatus"
                                                 :disabled="foreditstatusdisable"
                                                 color="orange"
-                                                v-model="user_information_data.sufix"
+                                                v-model="user_information_data.suffix"
                                                 label="Suffix Name"
                                             ></v-text-field>
                                         </div>
@@ -515,12 +515,11 @@
             flag : 0,
             is_parent : 0,
             parent_id : this.$route.params.parent_id,
-            is_outside : 1,
             // user_personal_information_table
             firstname : this.user_information_data.firstname,
             middlename : this.user_information_data.middlename,
             lastname : this.user_information_data.lastname,
-            sufix : this.user_information_data.suffix,
+            suffix : this.user_information_data.suffix,
             mobile_number :  this.user_information_data.country.phone_code != this.user_information_data.mobile_number ? this.user_information_data.mobile_number : '',
             birth_date : this.user_information_data.birth_date,
             // user_other_information_table

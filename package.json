@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@balkangraph/orgchart.js": "^8.10.2",
+    "@mdi/font": "^7.4.47",
     "axios": "^0.26.1",
     "chart.js": "^3.9.1",
     "core-js": "^3.6.5",

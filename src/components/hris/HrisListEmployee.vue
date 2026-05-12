@@ -324,7 +324,7 @@
                                                 <v-text-field
                                                     outlined
                                                     color="orange"
-                                                    v-model="user_information_data.sufix"
+                                                    v-model="user_information_data.suffix"
                                                     label="Suffix Name"
                                                 ></v-text-field>
                                             </div>
@@ -774,7 +774,7 @@
         { text: 'First Name', value: 'personal_information.firstname',sortable: true,width: '130px'},
         { text: 'Middle Name', value: 'personal_information.middlename',sortable: true,width: '130px'},
         { text: 'Last Name', value: 'personal_information.lastname',sortable: true,width: '130px'},
-        { text: 'Suffix', value: 'personal_information.sufix',sortable: false},
+        { text: 'Suffix', value: 'personal_information.suffix',sortable: false},
         { text: 'Division', value: 'division_information.name',sortable: false},  
         { text: 'Role', value: 'role_information.name',sortable: false},  
         { text: 'Branch', value: 'branch_information.branch_name',sortable: false},
@@ -982,7 +982,7 @@
                     this.user_information_data.firstname = this.user_information.personal_information.firstname
                     this.user_information_data.middlename = this.user_information.personal_information.middlename
                     this.user_information_data.lastname = this.user_information.personal_information.lastname
-                    this.user_information_data.suffix = this.user_information.personal_information.sufix
+                    this.user_information_data.suffix = this.user_information.personal_information.suffix
                     this.user_information_data.birth_date = this.user_information.personal_information.birth_date
                     this.user_information_data.mobile_number = this.user_information.personal_information.mobile_number
 
@@ -1058,7 +1058,7 @@
                 firstname : this.user_information_data.firstname,
                 middlename : this.user_information_data.middlename,
                 lastname : this.user_information_data.lastname,
-                sufix : this.user_information_data.suffix,
+                suffix : this.user_information_data.suffix,
                 address : this.user_information_data.address,
                 mobile_number :  this.user_information_data.country.phone_code != this.user_information_data.mobile_number ? this.user_information_data.mobile_number : '',
                 birth_date : this.user_information_data.birth_date,
@@ -1125,7 +1125,7 @@
                 firstname : this.user_information_data.firstname,
                 middlename : this.user_information_data.middlename,
                 lastname : this.user_information_data.lastname,
-                sufix : this.user_information_data.suffix,
+                suffix : this.user_information_data.suffix,
                 address : this.user_information_data.address,
                 mobile_number :  this.user_information_data.country.phone_code != this.user_information_data.mobile_number ? this.user_information_data.mobile_number : '',
                 birth_date : this.user_information_data.birth_date,

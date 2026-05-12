@@ -312,7 +312,7 @@
             { text: 'First Name', value: 'personal_information.firstname',sortable: true,width: '130px'},
             { text: 'Middle Name', value: 'personal_information.middlename',sortable: true,width: '130px'},
             { text: 'Last Name', value: 'personal_information.lastname',sortable: true,width: '130px'},
-            { text: 'Suffix', value: 'personal_information.sufix',sortable: false},
+            { text: 'Suffix', value: 'personal_information.suffix',sortable: false},
             { text: 'Division', value: 'division_information.name',sortable: false},  
             { text: 'Role', value: 'role_information.name',sortable: false},  
             { text: 'Branch', value: 'branch_information.branch_name',sortable: false},

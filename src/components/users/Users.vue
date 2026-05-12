@@ -1814,7 +1814,7 @@
                 firstname: this.firstname,
                 lastname: this.lastname,
                 middlename: this.middlename,
-                sufix : this.suffix,
+                suffix : this.suffix,
                 mobile_number: this.mobile_number,
                 birth_date: this.birth_date,
               },
@@ -1982,7 +1982,7 @@
             this.firstname = item.personal_information.firstname
             this.middlename = item.personal_information.middlename
             this.lastname = item.personal_information.lastname
-            this.suffix = item.personal_information.sufix
+            this.suffix = item.personal_information.suffix
             this.birth_date = item.personal_information.birth_date
             this.mobile_number = item.personal_information.mobile_number
             this.email = item.email

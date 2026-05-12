@@ -10,9 +10,6 @@ const apiClient = axios.create({
 });
 
 export default {
-    fetchBusinessType(){
-        return apiClient.get('/resources/fetchbusinesstypeinformation');
-    },
     fetchWorldInformation(payload){
         return apiClient.post('/resources/fetchworldinformation', payload);
     },
