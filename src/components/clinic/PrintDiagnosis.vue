@@ -3,24 +3,24 @@
         <div class="pa-6" v-for="(chunk, index) in paginatedPrescriptions" :key="index">
             <!-- Header Row -->
             <v-row class="align-center mb-4 justify-center">
-                <!-- Logo -->
-                <v-col cols="auto" class="pr-2 d-flex align-center">
+                <!-- Logo + Clinic Info side by side -->
+                <v-col cols="auto" class="d-flex align-center">
                     <img v-if="business_information?.business_image"
                         :src="company_image_path + business_information.business_image" alt="Clinic Logo"
-                        style="max-height:80px" />
-                    <img v-else src="../../assets/images/tldc_logo.png" alt="Clinic Logo" style="max-height:80px" />
-                </v-col>
+                        style="max-height:80px; margin-right:12px;" />
+                    <img v-else src="../../assets/images/tldc_logo.png" alt="Clinic Logo"
+                        style="max-height:80px; margin-right:12px;" />
 
-                <!-- Clinic Info -->
-                <v-col cols="auto" class="d-flex flex-column align-center">
-                    <h1 class="mb-0 text-center">{{ business_information?.business_name }}</h1>
-                    <p class="mb-0 text-center">
-                        {{ business_information?.business_address }},
-                        {{ business_information?.city_information?.name }},
-                        {{ business_information?.state_information?.name }},
-                        {{ business_information?.country_information?.name }}
-                    </p>
-                    <p class="mb-0 text-center">Mobile: {{ diagnosis.patient_info?.mobile_number }}</p>
+                    <div class="d-flex flex-column text-center">
+                        <h2 class="mb-0">{{ business_information?.business_name }}</h2>
+                        <p class="mb-0">
+                            {{ business_information?.business_address }},
+                            {{ business_information?.city_information?.name }},
+                            {{ business_information?.state_information?.name }},
+                            {{ business_information?.country_information?.name }}
+                        </p>
+                        <p class="mb-0">Mobile: {{ diagnosis.patient_info?.mobile_number }}</p>
+                    </div>
                 </v-col>
             </v-row>
 
@@ -100,7 +100,7 @@ export default {
     }),
     computed: {
         paginatedPrescriptions() {
-            const size = 10; // max items per page
+            const size = 8; // max items per page
             const prescriptions = this.diagnosis.prescription || [];
             const chunks = [];
             for (let i = 0; i < prescriptions.length; i += size) {

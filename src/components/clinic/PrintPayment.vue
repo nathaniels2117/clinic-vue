@@ -21,7 +21,7 @@
         </v-row>
 
         <!-- Patient Info -->
-        <v-row>
+        <v-row class="align-center">
             <v-col cols="8">
                 <strong>Name:</strong>
                 {{ payment.patient_info?.firstname }}
@@ -29,11 +29,11 @@
                 {{ payment.patient_info?.lastname }}
                 {{ payment.patient_info?.suffix }}
             </v-col>
-            <v-col cols="4" align="right">
+            <v-col cols="4" class="text-right">
                 <strong>Date:</strong> {{ formattedPaymentDate }}
-
             </v-col>
         </v-row>
+
         <div v-for="(chunk, index) in paginatedCombined" :key="index" class="page"
             :class="{ 'with-top-space': index > 0 }">
             <!-- Services Table -->
@@ -133,9 +133,9 @@ export default {
         formattedPaymentDate() {
             if (!this.payment.payment_date) return '';
             return new Date(this.payment.payment_date).toLocaleDateString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric'
+                month: '2-digit',
+                day: '2-digit',
+                year: '2-digit'
             });
         },
         discountInfo() {

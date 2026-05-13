@@ -507,7 +507,7 @@ export default {
             { text: 'Birthdate', value: 'birth_date', sortable: false, width: '120px' },
             { text: 'Mobile Number', value: 'mobile_number', width: '140px', sortable: false },
             { text: 'Gender', value: 'gender', sortable: false },
-            { text: 'Action', value: 'action', sortable: false }
+            { text: 'Action', value: 'action', sortable: false, width: '320px' }
         ],
         saveconfirmation: false,
         editconfirmation: false,

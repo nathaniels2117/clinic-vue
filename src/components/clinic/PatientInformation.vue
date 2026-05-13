@@ -594,6 +594,7 @@ export default {
         GetPatientInformation(id) { // get patient information
             let payload = {
                 id: id,
+                parent_id : this.$store.getters.getParentID
             };
             patientinformationservices.GetPatientInformation(payload, this.$store.getters.getAccessToken).then(response => {
                 if (response.data.success) {

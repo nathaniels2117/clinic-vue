@@ -13,7 +13,7 @@
                     </div>
                 </center>
                 <center>
-                    <v-btn @click="handleFileImport" v-if="$store.getters.valAccess(231)" elevation="5" icon
+                    <v-btn @click="handleFileImport"  elevation="5" icon
                         :loading="isSelecting" class="btn-camera">
                         <v-icon>mdi-camera</v-icon>
                     </v-btn>
@@ -65,7 +65,7 @@
                                 <!-- Action buttons -->
                                 <v-col>
                                     <v-btn elevation="2" outlined dark small block color="purple"
-                                        v-if="hidebutton == '1' && $store.getters.valAccess(231)" @click="forupdate()">
+                                        v-if="hidebutton == '1'" @click="forupdate()">
                                         Edit
                                     </v-btn>
                                     <div v-if="hidebutton == '2'">

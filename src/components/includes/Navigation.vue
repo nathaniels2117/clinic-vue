@@ -104,7 +104,7 @@
         <div
           v-if="$store.getters.valParent() || $store.getters.valAccess(165) || $store.getters.valAccess(166) || $store.getters.valAccess(167) || $store.getters.valAccess(168) || $store.getters.valAccess(169) || $store.getters.valAccess(170) || $store.getters.valAccess(171) || $store.getters.valAccess(172) || $store.getters.valAccess(173) || $store.getters.valAccess(174) || $store.getters.valAccess(175) || $store.getters.valAccess(176) || $store.getters.valAccess(177) || $store.getters.valAccess(178) || $store.getters.valAccess(179) || $store.getters.valAccess(180) || $store.getters.valAccess(181) || $store.getters.valAccess(182) || $store.getters.valAccess(183) || $store.getters.valAccess(184) || $store.getters.valAccess(185) || $store.getters.valAccess(215) || $store.getters.valAccess(245) || $store.getters.valAccess(250)">
           <v-subheader>Settings</v-subheader>
-          <v-list-item link @click="Company()" :disabled="!$store.getters.valAccess(232)"
+          <v-list-item link @click="Company()"
             v-if="$store.getters.valParent()">
             <v-list-item-icon>
               <v-icon>mdi-domain</v-icon>
